@@ -1,6 +1,6 @@
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_groq import ChatGroq
+from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -31,10 +31,10 @@ Question:
 
 Answer:"""
 
-    llm = ChatGroq(
-        model="openai/gpt-oss-120b",
-        temperature=0
-    )
+    llm = ChatOpenAI(
+    model="gpt-5-mini",
+    temperature=0
+)
     response = llm.invoke(prompt)
 
     return {
