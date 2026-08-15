@@ -1,0 +1,9 @@
+langchain
+langchain-text-splitters
+langchain-google-genai
+langchain-groq
+langchain-community
+youtube-transcript-api
+faiss-cpu
+python-dotenv
+streamlit
