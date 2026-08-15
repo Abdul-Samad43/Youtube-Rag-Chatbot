@@ -1,7 +1,7 @@
 # 📚 AI Multi Document RAG
 Chat with multiple PDF documents simultaneously using the power of RAG (Retrieval-Augmented Generation)
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![LangChain](https://img.shields.io/badge/LangChain-latest-green) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-Vector%20DB-orange) ![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-purple) ![Gemini](https://img.shields.io/badge/Google-Gemini-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![LangChain](https://img.shields.io/badge/LangChain-latest-green) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-Vector%20DB-orange) ![Groq]![Gemini](https://img.shields.io/badge/Google-Gemini-blue)
 
 ---
 
@@ -25,7 +25,7 @@ Built to demonstrate end-to-end RAG pipeline engineering using modern LLM framew
 
 - 📄 **Multi PDF Upload** — upload and query multiple documents simultaneously
 - 🧠 **Google Gemini Embeddings** — deep semantic understanding of document content
-- ⚡ **Groq LLM (llama-3.3-70b)** — fast, accurate answers grounded in your documents
+- ⚡ **Google Gemini (gemini-2.5-flash)** — fast, accurate answers grounded in your documents
 - 🔍 **Source Citations** — every answer shows exactly which document and page it came from
 - 🛡️ **Hallucination Prevention** — model strictly answers from uploaded content only
 - 📄 **Retrieved Chunks View** — see the exact text used to generate the answer
@@ -57,7 +57,7 @@ ai-multi-document-rag/
 | 🔗 RAG Framework | LangChain |
 | 🗄️ Vector Database | FAISS |
 | 🧬 Embeddings | Google Gemini (gemini-embedding-001) |
-| 🤖 LLM | Groq — llama-3.3-70b-versatile |
+| 🤖 LLM | Google Gemini — gemini-2.5-flash |
 | 📄 PDF Loader | LangChain PyPDFLoader |
 | 🎨 Frontend | Streamlit |
 
@@ -88,7 +88,7 @@ User asks a question
 Semantic Search → Top 3 Most Relevant Chunks
         │
         ▼
-Groq LLaMA 3.3 generates answer from context
+Google Gemini (gemini-2.5-flash) generates answer from context
         │
         ▼
 Answer + Source Citations returned ✅
@@ -114,9 +114,7 @@ pip install -r requirements.txt
 
 Create a `.env` file in the root directory:
 GOOGLE_API_KEY=your_google_api_key_here
-GROQ_API_KEY=your_groq_api_key_here
 - Get Google API key: https://aistudio.google.com
-- Get Groq API key: https://console.groq.com
 
 ### 4. Run the App
 
@@ -130,7 +128,6 @@ streamlit run app.py
 langchain
 langchain-community
 langchain-google-genai
-langchain-groq
 langchain-core
 langchain-text-splitters
 faiss-cpu
@@ -170,4 +167,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-*Built with ❤️ using LangChain, FAISS, Google Gemini and Groq*
+*Built with ❤️ using LangChain, FAISS and Google Gemini*
