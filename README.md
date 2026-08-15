@@ -1,7 +1,11 @@
 # 📚 AI Multi Document RAG
 Chat with multiple PDF documents simultaneously using the power of RAG (Retrieval-Augmented Generation)
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![LangChain](https://img.shields.io/badge/LangChain-latest-green) ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-Vector%20DB-orange) ![Groq]![Gemini]![Gemini](https://img.shields.io/badge/Google-Gemini-blue)![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-purple)
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![LangChain](https://img.shields.io/badge/LangChain-latest-green)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20DB-orange)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-blue?logo=google)
 
 ---
 
