@@ -1,6 +1,6 @@
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain_openai import ChatOpenAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -31,13 +31,22 @@ Question:
 
 Answer:"""
 
-    llm = ChatOpenAI(
-    model="gpt-5-mini",
+    llm = ChatGoogleGenerativeAI(
+    model="gemini-3.5-flash-lite",
     temperature=0
 )
     response = llm.invoke(prompt)
 
+    answer = response.content
+
+    if isinstance(answer, list):
+        answer = "".join(
+        block.get("text", "")
+        for block in answer
+        if isinstance(block, dict)
+    )
+
     return {
-        "answer": response.content,
-        "source_chunks": [doc.page_content for doc in docs]
-    }
+    "answer": answer,
+    "source_chunks": [doc.page_content for doc in docs]
+}
