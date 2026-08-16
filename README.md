@@ -21,7 +21,7 @@ Built to demonstrate end-to-end RAG pipeline engineering using modern LLM framew
 
 > *"I have 5 research papers, 3 reports and 2 manuals. Finding a specific answer means reading everything manually — that takes hours."*
 
-**Solution:** Upload all PDFs at once → Ask anything → Get accurate answers with page-level source citations — powered by semantic search and Groq LLaMA 3.3.
+**Solution:** Upload all PDFs at once → Ask anything → Get accurate answers with page-level source citations — powered by semantic search.
 
 ---
 
